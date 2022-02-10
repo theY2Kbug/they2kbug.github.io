@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- <header>
+        <p>jhvjdsa</p>
+    </header> -->
+    <main>
+        <div class="intro-screen" id="intro">
+            intro screen
+        </div>
+
+        <div id="group-1">
+            <div class="box">
+                <div class="title"><p>My projects</p></div>
+                <section class="card-list">
+                    <article class="card">
+                        <header class="card-header">
+                            <p>Wes Bos 30 day Vanilla JS Challenge</p>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                README.md
+                            </div>
+                        </div>
+            
+                        
+                    </article>
+            
+                    <article class="card">
+                        <header class="card-header">
+                            <p>Youtube clone</p>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                README.md
+                            </div>
+                        </div>
+            
+                    </article>
+            
+                    <article class="card">
+                        <header class="card-header">
+                            <p>Simple CRUD app</p>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                README.md
+                            </div>
+                        </div>
+                    </article>
+            
+                    <article class="card">
+                        <header class="card-header">
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                README.md
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <div class="parallax-group" id="group-2">
+            <div class="parallax-layer top_layer">
+                Top layer
+            </div>
+        </div>
+
+        <div class="parallax-group outro-screen" id="outro">
+            <div class="contact-form">
+                <div class="title">Contact</div>
+                <div class="about">
+                    <h3>
+                        Use the form below to reach out to me 
+                        or shoot an email to s_kathiresan@outlook.com 
+                        I shall reply back at the earliest within one working day
+                    </h3>
+                </div>
+                <form action="" method="GET">
+                    <div class="inp">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="field" placeholder="Enter Your Name" required>  
+                    </div>
+                    <div class="inp">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="field" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="inp">
+                        <label for="sub">Subject</label>
+                        <input type="text" name="sub" class="field" placeholder="Enter Subject" required>
+                    </div>
+                    <div class="inp">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="field" placeholder="Enter Message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+        
+    
+    <!-- <footer>
+        <p>iudsgia</p>
+    </footer> -->
+</body>
+</html>
