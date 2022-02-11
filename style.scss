@@ -39,6 +39,97 @@ body{
 
             &:nth-of-type(1){
                 background-color: #19dac3;
+                color:#475766;
+                .page-1{
+                    display: flex;
+                    flex-grow: 1;
+                    // height:100%;
+                    // width:100%;
+                    // border:10px solid black;
+                    .intro{
+                        // display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .common{
+                            height:60%;
+                            // border:2px solid greenyellow;
+                            .name{
+                                // flex-grow: 2;
+                                display:flex;
+                                height:85%;
+                                justify-content: center;
+                                align-items: flex-end;
+                                // border:2px solid blue;
+                                b{
+                                    // border:2px solid blue;
+                                    font-size: 6vw;
+                                    animation: type 3s steps(12),
+                                                textCursor 0.75s steps(12) infinite normal;
+                                    border-right: 10px solid #475766;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    @keyframes type{
+                                        0% {
+                                            width: 0ch;
+                                        }
+                                        100%{
+                                            width: 12ch;
+                                        }
+                                    }
+
+                                    @keyframes textCursor{
+                                        0% {
+                                            border-right-color: #475766;
+                                        }
+                                        100% {
+                                            border-right-color: transparent;
+                                        }
+                                    }
+        
+                                }
+                            }
+                            
+
+                            .job{
+                                // flex-grow: 1;
+                                height: 15%;
+                                // border: 2px solid navy;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-start;
+                                h3{
+                                    // border:2px solid blue;
+                                    font-size: 2.5vw;
+                                }
+                            }
+                        }
+                        
+                        .summary{
+                            height: 40%;
+                            // border:2px solid green;
+                            color: #8648e9;
+                            display:flex;
+                            align-items: center;
+                            // padding:24px;
+                            p{
+                                // border: 2px solid red;
+                                margin-left: 10vw;
+                                margin-right: 10vw;
+                                margin-bottom: 15vh;
+                                font-size: 24px !important;
+                                text-align: justify;
+                            }
+                            @media only screen and (max-width: 848px){
+                                p{
+                                    font-size: 16px !important;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                
             }
     
             &:nth-of-type(2){
@@ -151,6 +242,7 @@ body{
 
                         .card{
                             height:360px;
+                            // width:400px;
                         }
                     }
                 }
@@ -168,7 +260,7 @@ body{
                         .card{
                             box-shadow: none;
                             margin:8px;
-                            width: 50vw;
+                            width: 60vw;
                             height: 40vh;
                         }
                         .card-header{
@@ -212,7 +304,7 @@ body{
             &:nth-of-type(4){
                 background-color: #e4cd20;
                 .page-4{
-                    border:2px solid;
+                    // border:2px solid;
                     width:100%;
                     height:100%;
                     overflow-x: auto;
@@ -283,11 +375,34 @@ body{
         }
     }
 
-    @media screen and (max-width:848px){
+    @media screen and (max-width:600px){
         main{
             section{
                 &:nth-of-type(1){
                     scroll-snap-align: none;
+                    .page-1{
+                        .intro{
+                            .common{
+                                .name{
+                                    b{
+                                        font-size: 42px;
+                                    }
+                                }
+                                .job{
+                                    h3{
+                                        font-size: 20px;
+                                    }
+                                }
+
+                                
+                            }
+                            .summary{
+                                p{
+                                    font-size: 14px !important;
+                                }
+                            }
+                        }
+                    }
                 }
                 &:nth-of-type(2){
                     scroll-snap-align: none;
@@ -315,3 +430,38 @@ body{
         }
     }
 }
+
+// @media screen and (min-width:601px) and (max-width:800px){
+//     main{
+//         section{
+//             &:nth-of-type(1){
+//                 // scroll-snap-align: none;
+//                 .page-1{
+                    
+//                     .intro{
+                        
+//                         .common{
+//                             .name{
+//                                 b{
+//                                     font-size: 42px;
+//                                 }
+//                             }
+//                             .job{
+//                                 h3{
+//                                     font-size: 20px;
+//                                 }
+//                             }
+
+                            
+//                         }
+//                         .summary{
+//                             p{
+//                                 font-size: 16px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
