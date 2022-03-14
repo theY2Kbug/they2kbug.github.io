@@ -34,8 +34,8 @@ body{
             scroll-snap-align: start;
 
             &:nth-of-type(1){
-                background-color: #19dac3;
-                color:#475766;
+                background-color: #E0E0E6;
+                color:#293542;
                 .page-1{
                     display: flex;
                     flex-grow: 1;
@@ -62,7 +62,7 @@ body{
                                     font-size: 6vw;
                                     animation: type 3s steps(12),
                                                 textCursor 0.75s steps(12) infinite normal;
-                                    border-right: 10px solid #475766;
+                                    border-right: 10px solid #34414d;
                                     overflow: hidden;
                                     white-space: nowrap;
                                     @keyframes type{
@@ -104,7 +104,7 @@ body{
                         .summary{
                             height: 40%;
                             // border:2px solid green;
-                            color: #8648e9;
+                            color: #8841fa;
                             display:flex;
                             align-items: center;
                             // padding:24px;
@@ -129,7 +129,7 @@ body{
             }
     
             &:nth-of-type(2){
-                background-color: #586af4;
+                background-color: #D4D4D9;
                 color:#fefefe;
                 
                 .page-2{
@@ -146,6 +146,7 @@ body{
                     .title{
                         @include heading;
                         // margin:10px;
+                        color:#0f0c08;
                         width:100%;
                         min-width: 848px;
                         margin-top: 100px;
@@ -177,8 +178,8 @@ body{
                         min-width: 250px;
                         padding: 1.5rem;
                         border-radius: 1em;
-                        box-shadow: -0.5rem 0 2.5rem #586af4;
-                        transition: 275ms;
+                        box-shadow: -0.25rem 0 1.5rem #fefefe;
+                        transition: 300ms;
                         border:4px solid #ffab35
                     }
             
@@ -294,11 +295,11 @@ body{
             }
     
             &:nth-of-type(3){
-                background-color: #fc495e;
+                background-color: #C8C8CC;
             }
     
             &:nth-of-type(4){
-                background-color: #e4cd20;
+                background-color: #BCBCC0;
                 .page-4{
                     // border:2px solid;
                     width:100%;
@@ -310,8 +311,8 @@ body{
                     justify-content: center;
                     .contact-card{
                         display: flex;
-                        border:2px solid navy;
-                        color:#3589ff;
+                        border:2px solid rgb(0, 0, 0);
+                        color:#1F2226;//#3589ff
                         border-radius: 1em;
                         flex-direction: column;
                         
@@ -340,6 +341,7 @@ body{
                             padding: 12px 0px;
                             button{
                                 border:none;
+                                border-radius: 0.3rem;
                                 padding:4px;
                                 font-size: 16px;
                             }

@@ -40,8 +40,8 @@ body main section {
 }
 
 body main section:nth-of-type(1) {
-  background-color: #19dac3;
-  color: #475766;
+  background-color: #E0E0E6;
+  color: #293542;
 }
 
 body main section:nth-of-type(1) .page-1 {
@@ -87,7 +87,7 @@ body main section:nth-of-type(1) .page-1 .intro .common .name b {
   font-size: 6vw;
   -webkit-animation: type 3s steps(12), textCursor 0.75s steps(12) infinite normal;
           animation: type 3s steps(12), textCursor 0.75s steps(12) infinite normal;
-  border-right: 10px solid #475766;
+  border-right: 10px solid #34414d;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -147,7 +147,7 @@ body main section:nth-of-type(1) .page-1 .intro .common .job h3 {
 
 body main section:nth-of-type(1) .page-1 .intro .summary {
   height: 40%;
-  color: #8648e9;
+  color: #8841fa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +171,7 @@ body main section:nth-of-type(1) .page-1 .intro .summary p {
 }
 
 body main section:nth-of-type(2) {
-  background-color: #586af4;
+  background-color: #D4D4D9;
   color: #fefefe;
 }
 
@@ -193,6 +193,7 @@ body main section:nth-of-type(2) .page-2 {
 body main section:nth-of-type(2) .page-2 .title {
   font-size: 3.5vmax;
   text-align: center;
+  color: #0f0c08;
   width: 100%;
   min-width: 848px;
   margin-top: 100px;
@@ -233,10 +234,10 @@ body main section:nth-of-type(2) .page-2 .card {
   min-width: 250px;
   padding: 1.5rem;
   border-radius: 1em;
-  -webkit-box-shadow: -0.5rem 0 2.5rem #586af4;
-          box-shadow: -0.5rem 0 2.5rem #586af4;
-  -webkit-transition: 275ms;
-  transition: 275ms;
+  -webkit-box-shadow: -0.25rem 0 1.5rem #fefefe;
+          box-shadow: -0.25rem 0 1.5rem #fefefe;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   border: 4px solid #ffab35;
 }
 
@@ -346,11 +347,11 @@ body main section:nth-of-type(2) .page-2 .author-name {
 }
 
 body main section:nth-of-type(3) {
-  background-color: #fc495e;
+  background-color: #C8C8CC;
 }
 
 body main section:nth-of-type(4) {
-  background-color: #e4cd20;
+  background-color: #BCBCC0;
 }
 
 body main section:nth-of-type(4) .page-4 {
@@ -375,8 +376,8 @@ body main section:nth-of-type(4) .page-4 .contact-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid navy;
-  color: #3589ff;
+  border: 2px solid black;
+  color: #1F2226;
   border-radius: 1em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -407,6 +408,7 @@ body main section:nth-of-type(4) .page-4 .contact-card form {
 
 body main section:nth-of-type(4) .page-4 .contact-card form button {
   border: none;
+  border-radius: 0.3rem;
   padding: 4px;
   font-size: 16px;
 }
