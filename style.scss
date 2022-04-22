@@ -294,12 +294,12 @@ body{
                 }
             }
     
-            &:nth-of-type(3){
-                background-color: #C8C8CC;
-            }
+                // &:nth-of-type(3){
+                //     background-color: #C8C8CC;
+                // }
     
-            &:nth-of-type(4){
-                background-color: #BCBCC0;
+            &:nth-of-type(3){
+                background-color: #C8C8CC; //#BCBCC0
                 .page-4{
                     // border:2px solid;
                     width:100%;
@@ -405,10 +405,10 @@ body{
                 &:nth-of-type(2){
                     scroll-snap-align: none;
                 }
+                // &:nth-of-type(3){
+                //     scroll-snap-align: none;
+                // }
                 &:nth-of-type(3){
-                    scroll-snap-align: none;
-                }
-                &:nth-of-type(4){
                     scroll-snap-align: none;
                     .page-4{
                         .title{
