@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,17 @@
     <title>Kathiresan Senthil</title>
 </head>
 <body>
+    <div class="navigation">
+        <ul>
+            <li class="one"><a href="#page-1">Intro</a></li>
+            <li class="two"><a href="#page-2">My Projects</a></li>
+            <li class="three"><a href="#page-3">About Me</a></li>
+            <li class="four"><a href="#page-4">Contact</a></li>
+        </ul>
+    </div>
     <main>
         <section>
-            <div class="page-1">
+            <div id="page-1">
                 <div class="intro">
                     <div class="common">
                         <div class="name"><b>Kathiresan S</b></div>
@@ -19,10 +26,10 @@
                     </div>
                     <div class="summary">
                         <p>
-                            I am a final year Engineering student. 
-                            I'm looking out for the position of junior <b>Frontend Engineer</b>.
-                            I like to implement attractive UI with a clean UX. 
-                            I build fullstack applications with a
+                            <b>Hey there!</b> I recently graduated from college in 2022 with a B.E. degree in Electronics & Instrumentation Engineering. 
+                            I'm looking out for the position of <b>Frontend Engineer</b>.
+                            I like to implement attractive and intuitive UI with a clean UX. 
+                            I build fullstack applications (Any React.js based stack) with a
                             great emphasis on the Frontend.
                         </p>
                     </div>
@@ -30,13 +37,61 @@
             </div>
         </section>
         <section>
-            <div class="common page-2">
+            <div id="page-2">
                 <div class="title"><p>Projects</p></div>
                 <div class="card-list">
                     <article class="card">
                         <header class="card-header">
+                            <p>CRUD App</p>
+                            <h2>A secure Daily Planner web app built using the MERN stack with OAuth & Push Notifications</h2>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                In Progress
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <header class="card-header">
+                            <p>Fullstack Clone</p>
+                            <h2>A fully functional clone of YouTube</h2>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                In Progress
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <header class="card-header">
+                            <p>CP/LFT</p>
+                            <h2>An attempt to implement local file transfer client and server using Web Assembly</h2>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                In Progress
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <header class="card-header">
                             <p>Millifluidics Simulation</p>
-                            <h2>A MATLAB simulation of droplets flowing through a millifluidic chamber</h2>
+                            <h2>A MATLAB simulation of droplets flowing through a millifluidic loop</h2>
                         </header>
             
                         <div class="card-author">
@@ -53,8 +108,8 @@
             
                     <article class="card">
                         <header class="card-header">
-                            <p>Base of Support</p>
-                            <h2>Estimate a person's static BoS using Tensorflow and OpenCV</h2>
+                            <p>BoS Visualizer</p>
+                            <h2>A python GUI application to estimate a person's Base of Support during static balance</h2>
                         </header>
             
                         <div class="card-author">
@@ -66,22 +121,6 @@
                             </div>
                         </div>
             
-                    </article>
-            
-                    <article class="card">
-                        <header class="card-header">
-                            <p>CRUD application</p>
-                            <h2>A simple React app to CREATE, READ, UPDATE & DELETE from a local MySQL database</h2>
-                        </header>
-            
-                        <div class="card-author">
-                            <a href="#" class="author-avatar">
-                                <!-- <img src="https://img.icons8.com/nolan/128/github.png"/> -->
-                            </a>
-                            <div class="author-name">
-                                <!-- README.md -->
-                            </div>
-                        </div>
                     </article>
             
                     <article class="card">
@@ -102,20 +141,22 @@
                 </div>
             </div>
         </section>
-        <!-- <section>
-            <div class="common page-3">
+
+        <section>
+            <div id="page-3">
 
             </div>
-        </section> -->
+        </section>
+
         <section>
-            <div class="common page-4">
+            <div id="page-4">
                 <div class="contact-card">
                     <div class="title">Contact</div>
                     <div class="about">
                         <h3>
-                            Use the form below to reach out to me 
+                            Feel free to use the form below to reach out to me 
                             or shoot an email to <i>s_kathiresan@outlook.com</i>
-                            I shall reply back at the earliest within one working day
+                            A reply back at the earliest within one working day is guaranteed.
                         </h3>
                     </div>
                     <form action="https://formsubmit.co/1ef7ad71c34545c1e732bad3fce1c8f2" method="POST">
