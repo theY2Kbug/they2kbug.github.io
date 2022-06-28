@@ -286,17 +286,7 @@ body main section:nth-of-type(2) #page-2 .author-name {
 body main section:nth-of-type(3) {
   background-color: #232323;
 }
-body main section:nth-of-type(3) #page-3 {
-  width: 100%;
-  height: 100%;
-  overflow-x: auto;
-  display: flex;
-  flex-grow: 1;
-}
-body main section:nth-of-type(4) {
-  background-color: #262626;
-}
-body main section:nth-of-type(4) #page-4 {
+body main section:nth-of-type(3) #page-4 {
   width: 100%;
   height: 100%;
   overflow-x: auto;
@@ -306,7 +296,7 @@ body main section:nth-of-type(4) #page-4 {
   justify-content: center;
   cursor: default;
 }
-body main section:nth-of-type(4) #page-4 .contact-card {
+body main section:nth-of-type(3) #page-4 .contact-card {
   display: flex;
   border: 2px solid #505251;
   color: #3f88ee;
@@ -317,40 +307,40 @@ body main section:nth-of-type(4) #page-4 .contact-card {
   min-width: 275px;
   padding: 10px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card .title {
+body main section:nth-of-type(3) #page-4 .contact-card .title {
   font-size: 3.5vmax;
   text-align: center;
 }
-body main section:nth-of-type(4) #page-4 .contact-card .about {
+body main section:nth-of-type(3) #page-4 .contact-card .about {
   text-align: justify;
   margin-top: 0.5vw;
   font-size: 16px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form {
+body main section:nth-of-type(3) #page-4 .contact-card form {
   padding: 12px 0px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form button {
+body main section:nth-of-type(3) #page-4 .contact-card form button {
   border: none;
   border-radius: 0.3rem;
   padding: 4px;
   font-size: 16px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp {
+body main section:nth-of-type(3) #page-4 .contact-card form > .inp {
   display: flex;
   flex-direction: column;
   margin: 8px 0;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp .field {
+body main section:nth-of-type(3) #page-4 .contact-card form > .inp .field {
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
   border: 0px solid;
   margin-bottom: 0.25vw;
   font-size: 20px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp label {
+body main section:nth-of-type(3) #page-4 .contact-card form > .inp label {
   font-size: 18px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp textarea {
+body main section:nth-of-type(3) #page-4 .contact-card form > .inp textarea {
   resize: none;
 }
 @media screen and (max-width: 600px) {
@@ -369,13 +359,10 @@ body main section:nth-of-type(4) #page-4 .contact-card form > .inp textarea {
   body main section:nth-of-type(3) {
     scroll-snap-align: none;
   }
-  body main section:nth-of-type(4) {
-    scroll-snap-align: none;
-  }
-  body main section:nth-of-type(4) #page-4 .title {
+  body main section:nth-of-type(3) #page-4 .title {
     font-weight: 800;
   }
-  body main section:nth-of-type(4) #page-4 .contact-card .about {
+  body main section:nth-of-type(3) #page-4 .contact-card .about {
     font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
