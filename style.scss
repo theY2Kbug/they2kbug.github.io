@@ -175,6 +175,12 @@ body{
                     height: 100%;
                     overflow-x: auto;
                     display: flex;
+                    flex-direction: column;
+                    .empty{
+                        margin-top: 0px;
+                        height:10vh;
+                        // border:1px solid goldenrod;
+                    }
                     // flex-grow: 1;
 
                     .modal{
@@ -190,7 +196,7 @@ body{
                             border:4px solid cornflowerblue;
                             border-right: 2px solid cornflowerblue;
                             width:50%;
-                            min-width:450px;
+                            min-width:360px;
                             color:white;
                             display:flex;
                             flex-wrap: wrap;
@@ -276,7 +282,7 @@ body{
                         .skills{
                             // border:1px solid blue;
                             width:50%;
-                            min-width:385px;
+                            min-width:360px;
                             display:flex;
                             flex-direction: column;
                             padding:2em;
@@ -351,12 +357,15 @@ body{
 
                 @media screen and (max-width:600px){
                     #page-2{
-                        
                         .modal{
                             margin:0;
                             .past-exp-container{
                                 width:100%;
+                                label{
+                                    font-size: 16px;
+                                }
                                 .content{
+                                    font-size: 14px;
                                     height:400px;
                                     margin-bottom: 2em;
                                 }
@@ -364,6 +373,16 @@ body{
 
                             .skills{
                                 width:100%;
+                                .fe{
+                                    .frontend{
+                                        font-size: 24px;
+                                    }
+                                }
+                                .misc{
+                                    .miscellaneous{
+                                        font-size: 24px;
+                                    }
+                                }
                                 img{
                                     width:50px;
                                 }
