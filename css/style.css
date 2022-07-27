@@ -150,33 +150,190 @@ body main section:nth-of-type(1) #page-1 .intro .summary p {
 }
 body main section:nth-of-type(2) {
   background-color: #202020;
-  color: #fefefe;
 }
 body main section:nth-of-type(2) #page-2 {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  display: flex;
+}
+body main section:nth-of-type(2) #page-2 .modal {
+  display: flex;
+  margin: 3em;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container {
+  border: 4px solid cornflowerblue;
+  border-right: 2px solid cornflowerblue;
+  width: 50%;
+  min-width: 450px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em 1em;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container .title {
+  font-size: 3.5vmax;
+  text-align: center;
+  color: #d4d4d9;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container input {
+  display: none;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container label {
+  color: white;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding: 1em;
+  font-weight: bold;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container #blank {
+  flex-grow: 1;
+  background-color: inherit;
+  cursor: default;
+  border-radius: 0;
+  border: none;
+  border-bottom: 4px solid #ff5412;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container label:hover {
+  cursor: pointer;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content {
+  display: none;
+  border: 4px solid #ff5412;
+  border-top: none;
+  width: 100%;
+  padding: 1em;
+  order: 1;
+  font-size: 1em;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content ul {
+  position: relative;
+  left: 1em;
+  margin-right: 0.25em;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content a {
+  color: inherit;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container input:not(:checked) + label {
+  border-bottom: 4px solid #ff5412;
+  color: #ff5412;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container input:checked + label {
+  display: block;
+  border: 4px solid #ff5412;
+  border-bottom: none;
+}
+body main section:nth-of-type(2) #page-2 .modal .past-exp-container input:checked + label + .content {
+  display: block;
+}
+body main section:nth-of-type(2) #page-2 .modal .skills {
+  width: 50%;
+  min-width: 385px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: 4px solid cornflowerblue;
+  border-left: 2px solid cornflowerblue;
+}
+body main section:nth-of-type(2) #page-2 .modal .skills .title {
+  font-size: 3.5vmax;
+  text-align: center;
+  color: #d4d4d9;
+  width: 100%;
+  margin-bottom: 1em;
+}
+body main section:nth-of-type(2) #page-2 .modal .skills .fe .frontend {
+  color: #fefefe;
+  font-size: xx-large;
+  padding-bottom: 0.5em;
+}
+body main section:nth-of-type(2) #page-2 .modal .skills .misc .miscellaneous {
+  font-size: xx-large;
+  padding-bottom: 0.5em;
+  color: #fefefe;
+}
+body main section:nth-of-type(2) #page-2 .modal .skills img {
+  display: block;
+  padding: 0.5em;
+  width: 75px;
+}
+body main section:nth-of-type(2) #page-2 .modal .skills .images {
+  padding: 1em 1em 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  body main section:nth-of-type(2) #page-2 .modal {
+    flex-direction: column;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .past-exp-container {
+    width: 100%;
+    border: 4px solid cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content {
+    height: 300px;
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .skills {
+    width: 100%;
+    border: 4px solid cornflowerblue;
+    border-top: 2px solid cornflowerblue;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .skills img {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body main section:nth-of-type(2) #page-2 .modal {
+    margin: 0;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .past-exp-container {
+    width: 100%;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content {
+    height: 400px;
+    margin-bottom: 2em;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .skills {
+    width: 100%;
+  }
+  body main section:nth-of-type(2) #page-2 .modal .skills img {
+    width: 50px;
+  }
+}
+body main section:nth-of-type(3) {
+  background-color: #232323;
+  color: #fefefe;
+  min-width: 360px;
+}
+body main section:nth-of-type(3) #page-3 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
   overflow-x: auto;
 }
-body main section:nth-of-type(2) #page-2 .title {
+body main section:nth-of-type(3) #page-3 .title {
   font-size: 3.5vmax;
   text-align: center;
   color: #d4d4d9;
   width: 100%;
-  min-width: 1200px;
   margin-top: 100px;
 }
-body main section:nth-of-type(2) #page-2 .card-list {
+body main section:nth-of-type(3) #page-3 .card-list {
   display: flex;
   margin-top: 40px;
   flex-grow: 1;
-  min-width: 1200px;
+  max-width: 100vw;
   justify-content: center;
   align-items: center;
   padding: 3em;
 }
-body main section:nth-of-type(2) #page-2 .card {
+body main section:nth-of-type(3) #page-3 .card {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -185,33 +342,35 @@ body main section:nth-of-type(2) #page-2 .card {
   height: 400px;
   min-width: 300px;
   max-width: 300px;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-radius: 1em;
   box-shadow: -0.85rem 1rem 1.5rem #000;
   transition: 300ms;
-  border: 4px solid #ffab35;
+  border: 4px solid #ffaa34;
   cursor: default;
 }
-body main section:nth-of-type(2) #page-2 .card-header > p {
-  margin-bottom: 10px;
-  font-size: 1.5em;
+body main section:nth-of-type(3) #page-3 .card-header {
+  height: 75%;
 }
-body main section:nth-of-type(2) #page-2 .card:hover {
+body main section:nth-of-type(3) #page-3 .card-header > p {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #abc1ec;
+}
+body main section:nth-of-type(3) #page-3 .card-header > p > a {
+  color: inherit;
+}
+body main section:nth-of-type(3) #page-3 .card:hover {
   transform: translateY(-1rem);
 }
-body main section:nth-of-type(2) #page-2 .card:hover p {
-  color: #64dbf8;
-}
-body main section:nth-of-type(2) #page-2 .card:hover h2 {
-  color: #ff9050;
-}
-body main section:nth-of-type(2) #page-2 .card:hover ~ .card {
+body main section:nth-of-type(3) #page-3 .card:hover ~ .card {
   transform: translateX(130px);
 }
-body main section:nth-of-type(2) #page-2 .card:not(:first-child) {
+body main section:nth-of-type(3) #page-3 .card:not(:first-child) {
   margin-left: -130px;
 }
-body main section:nth-of-type(2) #page-2 .card-author {
+body main section:nth-of-type(3) #page-3 .card-author {
   position: relative;
   right: 1rem;
   bottom: 0rem;
@@ -221,72 +380,79 @@ body main section:nth-of-type(2) #page-2 .card-author {
   /* margin:3rem 0 0; */
   /* margin-right:4em; */
 }
-body main section:nth-of-type(2) #page-2 .author-avatar img {
+body main section:nth-of-type(3) #page-3 .card-author .author-name {
+  position: relative;
+  left: 0.5rem;
+  top: 0.2rem;
+  color: #8ae08a;
+  font-weight: 800;
+}
+body main section:nth-of-type(3) #page-3 .author-avatar img {
   display: block;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin: 16px 10px;
 }
-body main section:nth-of-type(2) #page-2 .author-name {
-  position: relative;
-  left: 0.5rem;
-  top: 0.2rem;
-  color: #9dc29d;
-  font: normal;
-  font-weight: 800;
-}
 @media screen and (max-width: 848px) {
-  body main section:nth-of-type(2) #page-2 .title {
+  body main section:nth-of-type(3) #page-3 .title {
     font-weight: 800;
   }
-  body main section:nth-of-type(2) #page-2 .card {
-    height: 360px;
+  body main section:nth-of-type(3) #page-3 .card {
+    max-height: 360px;
+    min-width: 240px;
+  }
+  body main section:nth-of-type(3) #page-3 .card-header > p {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  body main section:nth-of-type(3) #page-3 .card-header > h3 {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 600px) {
-  body main section:nth-of-type(2) #page-2 .title {
+  body main section:nth-of-type(3) #page-3 .title {
     font-size: 36px;
     margin-top: 50px;
     margin-bottom: 0;
     min-width: 360px;
     font-weight: 800;
   }
-  body main section:nth-of-type(2) #page-2 .card {
+  body main section:nth-of-type(3) #page-3 .card {
     box-shadow: none;
     margin: 8px;
-    width: 50vw;
-    height: 45vh;
+    min-width: 300px;
+    max-width: 300px;
   }
-  body main section:nth-of-type(2) #page-2 .card-header h2 {
-    font-size: 20px;
+  body main section:nth-of-type(3) #page-3 .card-header h3 {
+    font-size: 18px;
   }
-  body main section:nth-of-type(2) #page-2 .card:not(:first-child) {
+  body main section:nth-of-type(3) #page-3 .card:not(:first-child) {
     margin-left: 0px;
   }
-  body main section:nth-of-type(2) #page-2 .card-list {
+  body main section:nth-of-type(3) #page-3 .card-list {
     margin-top: 0px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: auto;
     min-width: 360px;
   }
-  body main section:nth-of-type(2) #page-2 .card:hover {
+  body main section:nth-of-type(3) #page-3 .card:hover {
     transform: translateY(0);
   }
-  body main section:nth-of-type(2) #page-2 .card:hover ~ .card {
+  body main section:nth-of-type(3) #page-3 .card:hover ~ .card {
     transform: translateX(0);
   }
 }
 @media screen and (max-width: 360px) {
-  body main section:nth-of-type(2) #page-2 .card {
+  body main section:nth-of-type(3) #page-3 .card {
     width: 200px;
     height: 300px;
   }
 }
-body main section:nth-of-type(3) {
-  background-color: #232323;
+body main section:nth-of-type(4) {
+  background-color: #262626;
 }
-body main section:nth-of-type(3) #page-4 {
+body main section:nth-of-type(4) #page-4 {
   width: 100%;
   height: 100%;
   overflow-x: auto;
@@ -296,7 +462,7 @@ body main section:nth-of-type(3) #page-4 {
   justify-content: center;
   cursor: default;
 }
-body main section:nth-of-type(3) #page-4 .contact-card {
+body main section:nth-of-type(4) #page-4 .contact-card {
   display: flex;
   border: 2px solid #505251;
   color: #3f88ee;
@@ -307,40 +473,40 @@ body main section:nth-of-type(3) #page-4 .contact-card {
   min-width: 275px;
   padding: 10px;
 }
-body main section:nth-of-type(3) #page-4 .contact-card .title {
+body main section:nth-of-type(4) #page-4 .contact-card .title {
   font-size: 3.5vmax;
   text-align: center;
 }
-body main section:nth-of-type(3) #page-4 .contact-card .about {
+body main section:nth-of-type(4) #page-4 .contact-card .about {
   text-align: justify;
   margin-top: 0.5vw;
   font-size: 16px;
 }
-body main section:nth-of-type(3) #page-4 .contact-card form {
+body main section:nth-of-type(4) #page-4 .contact-card form {
   padding: 12px 0px;
 }
-body main section:nth-of-type(3) #page-4 .contact-card form button {
+body main section:nth-of-type(4) #page-4 .contact-card form button {
   border: none;
   border-radius: 0.3rem;
   padding: 4px;
   font-size: 16px;
 }
-body main section:nth-of-type(3) #page-4 .contact-card form > .inp {
+body main section:nth-of-type(4) #page-4 .contact-card form > .inp {
   display: flex;
   flex-direction: column;
   margin: 8px 0;
 }
-body main section:nth-of-type(3) #page-4 .contact-card form > .inp .field {
+body main section:nth-of-type(4) #page-4 .contact-card form > .inp .field {
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
   border: 0px solid;
   margin-bottom: 0.25vw;
   font-size: 20px;
 }
-body main section:nth-of-type(3) #page-4 .contact-card form > .inp label {
+body main section:nth-of-type(4) #page-4 .contact-card form > .inp label {
   font-size: 18px;
 }
-body main section:nth-of-type(3) #page-4 .contact-card form > .inp textarea {
+body main section:nth-of-type(4) #page-4 .contact-card form > .inp textarea {
   resize: none;
 }
 @media screen and (max-width: 600px) {
@@ -359,10 +525,13 @@ body main section:nth-of-type(3) #page-4 .contact-card form > .inp textarea {
   body main section:nth-of-type(3) {
     scroll-snap-align: none;
   }
-  body main section:nth-of-type(3) #page-4 .title {
+  body main section:nth-of-type(4) {
+    scroll-snap-align: none;
+  }
+  body main section:nth-of-type(4) #page-4 .title {
     font-weight: 800;
   }
-  body main section:nth-of-type(3) #page-4 .contact-card .about {
+  body main section:nth-of-type(4) #page-4 .contact-card .about {
     font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

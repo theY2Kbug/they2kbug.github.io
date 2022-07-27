@@ -10,9 +10,9 @@
 <body>
     <div class="navigation">
         <ul>
-            <li class="one"><a href="#page-1">Intro</a></li>
-            <li class="two"><a href="#page-2">My Projects</a></li>
-            <li class="three"><a href="#page-3">About Me</a></li>
+            <li class="one"><a href="#page-1">About me</a></li>
+            <li class="two"><a href="#page-2">Experience & Skills</a></li>
+            <li class="three"><a href="#page-3">Projects</a></li>
             <li class="four"><a href="#page-4">Contact</a></li>
         </ul>
     </div>
@@ -26,18 +26,85 @@
                     </div>
                     <div class="summary">
                         <p>
-                            <b>Hey there!</b> I recently graduated from college in 2022 with a B.E. degree in Electronics & Instrumentation Engineering. 
+                            <b>Hey there!</b> I recently graduated from college in 2022 with a 
+                            bachelor's degree in Electronics & Instrumentation Engineering. 
                             I'm looking out for the position of <b>Frontend Engineer</b>.
                             I like to implement attractive and intuitive UI with a clean UX. 
-                            I build fullstack applications (Any React.js based stack) with a
-                            great emphasis on the Frontend.
+                            I build fullstack applications (Any React.js based stack) with a great
+                            emphasis on the Frontend. I'm also open to learning new Frontend frameworks in the future.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section>
             <div id="page-2">
+                <div class="empty"></div>
+                <div class="modal">
+                    <div class="past-exp-container">
+                        <div class="title">Previous experience</div>
+                        <input type="radio" name="past-exp-container" id="SRI-B" checked="checked">
+                        <label for="SRI-B">Samsung Prism</label>
+                        <div class="content">
+                            <div class="designation"> <b>Role: </b>Intern</div>
+                            <div class="duration"> <b>Duration: </b>September-2021 to April-2022</div>
+                            <b>Responsibilities:</b>
+                            <ul>
+                                <li>Worked on estimation of Quality Of Experience (QOE) from video streaming traffic</li>
+                                <li>Network trace files that contained video streaming data were captured and analyzed to estimate QOE</li>
+                                <li>On conducting a detailed study of various available machine learning algorithms, the random forest classifier was used to develop a model to quantitatively estimate QOE on a scale of 1-5 (1:poor; 5:excellent)</li>
+                            </ul>
+                        </div>
+                        <input type="radio" name="past-exp-container" id="IMOV">
+                        <label for="IMOV">IMOV MotionTech</label>
+                        <div class="content">
+                            <div class="designation"> <b>Role: </b>Computer Vision Intern</div>
+                            <div class="duration"> <b>Duration: </b>July-2021 to June-2022</div>
+                            <b>Responsibilities:</b>
+                            <ul>
+                                <li>Worked in a project funded by BIRAC (DBT- GOI)</li>
+                                <li>Used a depth camera to visually estimate Base of Support and control an object in a Unity 3D game</li>
+                                <li>Conducted a detailed study & <a href="https://link.springer.com/chapter/10.1007/978-981-19-0095-2_37">co-authored a paper</a> on the effects of 
+                                    environmental conditions on the quality of depth data obtained from a depth camera</li>
+                            </ul>
+                        </div>
+                        <label for="dummy" id="blank"></label>
+                    </div>
+                    <div class="skills">
+                        <div class="title">Skills</div>
+                        <div class="fe">
+                            <div class="frontend">Frontend:</div>
+                            <div class="images">
+                                <img src="./images/Devicon-html5-plain.svg" title="HTML5" alt="HTML5"/>
+                                <img src="./images/Devicon-css3-plain.svg" title="CSS3" alt="CSS3"/>
+                                <img src="./images/Unofficial_JavaScript_logo_2.svg" title="ES6" alt="ES6"/>
+                                <img src="./images/react.svg" title="React.js" alt="React.js"/>
+                                <img src="./images/sass.svg" title="Syntactically Awesome Style Sheets (SCSS)" alt="Syntactically Awesome Style Sheets (SCSS)"/>
+                                <img src="./images/Tailwind_CSS_Logo.svg" title="Tailwind CSS" alt="Tailwind CSS"/>
+                                
+                            </div>
+                        </div>
+                        <div class="misc">
+                            <div class="miscellaneous">Miscellaneous:</div>
+                            <div class="images">
+                                <img src="./images/python.svg" title="Python3" alt="Python3"/>
+                                <img src="./images/cplusplus.svg" title="C++" alt="C++"/>
+                                <img src="./images/OpenCV_logo_no_text.svg" title="OpenCV" alt="OpenCV"/>
+                                <img src="./images/Git_icon.svg" title="Git" alt="Git"/>
+                                <img src="./images/P5.js_icon.svg" title="p5.js" alt="p5.js"/>
+                                <img src="./images/Tensorflow_logo.svg" title="TensorFlow2" alt="TensorFlow2"/>
+                                <img src="./images/Python_and_Qt.svg" title="PyQt5" alt="PyQt5"/>
+                                <img src="./images/Matlab_Logo.png" title="MATLAB" alt="MATLAB"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="page-3">
                 <div class="title"><p>Projects</p></div>
                 <div class="card-list">
                     <!-- <article class="card">
@@ -54,44 +121,12 @@
                                 In Progress
                             </div>
                         </div>
-                    </article>
-
-                    <article class="card">
-                        <header class="card-header">
-                            <p>Fullstack Clone</p>
-                            <h2>A fully functional clone of YouTube</h2>
-                        </header>
-            
-                        <div class="card-author">
-                            <a href="#" class="author-avatar">
-                                <img src="https://img.icons8.com/nolan/128/github.png"/>
-                            </a>
-                            <div class="author-name">
-                                In Progress
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <header class="card-header">
-                            <p>CP/LFT</p>
-                            <h2>An attempt to implement local file transfer client and server using Web Assembly</h2>
-                        </header>
-            
-                        <div class="card-author">
-                            <a href="#" class="author-avatar">
-                                <img src="https://img.icons8.com/nolan/128/github.png"/>
-                            </a>
-                            <div class="author-name">
-                                In Progress
-                            </div>
-                        </div>
                     </article> -->
 
                     <article class="card">
                         <header class="card-header">
                             <p>Millifluidics Simulation</p>
-                            <h2>A MATLAB simulation of droplets flowing through a bifurcated loop</h2>
+                            <h3>MATLAB simulation of droplets flowing through a bifurcated loop</h3>
                         </header>
             
                         <div class="card-author">
@@ -109,7 +144,7 @@
                     <article class="card">
                         <header class="card-header">
                             <p>BoS Visualizer</p>
-                            <h2>A python GUI application to estimate a person's Base of Support during static balance</h2>
+                            <h3>GUI application to estimate a person's Base of Support during static balance</h3>
                         </header>
             
                         <div class="card-author">
@@ -122,11 +157,27 @@
                         </div>
             
                     </article>
+
+                    <article class="card">
+                        <header class="card-header">
+                            <p>googlol Search</p>
+                            <h3>React app that calls the google search api and renders the results fetched.</h3>
+                        </header>
+            
+                        <div class="card-author">
+                            <a href="#" class="author-avatar">
+                                <img src="https://img.icons8.com/nolan/128/github.png"/>
+                            </a>
+                            <div class="author-name">
+                                In Progress
+                            </div>
+                        </div>
+                    </article>
             
                     <article class="card">
                         <header class="card-header">
-                            <p>Maze Renderer</p>
-                            <h2>A JavaScript implementation of the Wolfenstein 3D engine using p5.js</h2>
+                            <p> <a href="https://they2kbug.github.io/Maze-Renderer">Maze Renderer</a></p>
+                            <h3>A JavaScript implementation of the Wolfenstein 3D rendering engine using p5.js</h3>
                         </header>
             
                         <div class="card-author">
@@ -141,12 +192,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section>
-            <div id="page-3">
-
-            </div>
-        </section> -->
 
         <section>
             <div id="page-4">
