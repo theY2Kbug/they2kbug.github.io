@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Kathiresan Senthil</title>
 </head>
 <body>
     <div class="navigation">
         <ul>
-            <li class="one"><a href="#page-1">About me</a></li>
-            <li class="two"><a href="#page-2">Experience & Skills</a></li>
-            <li class="three"><a href="#page-3">Projects</a></li>
-            <li class="four"><a href="#page-4">Contact</a></li>
+            <li class="one"><a class ="underline" href="#about-me">About me</a></li>
+            <li class="two"><a class ="underline" href="#xp-skills">Experience & Skills</a></li>
+            <li class="three"><a class ="underline" href="#projects">Projects</a></li>
+            <li class="four"><a class ="underline" href="#contact-me">Contact</a></li>
         </ul>
     </div>
     <main>
         <section>
-            <div id="page-1">
+            <div id="about-me">
                 <div class="intro">
                     <div class="common">
                         <div class="name"><b>Kathiresan S</b></div>
@@ -26,12 +27,13 @@
                     </div>
                     <div class="summary">
                         <p>
-                            <b>Hey there!</b> I recently graduated from college in 2022 with a 
-                            bachelor's degree in Electronics & Instrumentation Engineering. 
-                            I'm looking out for the position of <b>Frontend Engineer</b>.
+                            <b>Hey there!</b> I graduated from college in 2022 with a 
+                            bachelor's degree in Electronics & Instrumentation Engineering.
+                            Over the last year, I've developed a keen interest on frontend software developement. 
+                            I'm looking out for the position of entry level <b>Frontend Developer</b>.
                             I like to implement attractive and intuitive UI with a clean UX. 
-                            I build fullstack applications (Any React.js based stack) with a great
-                            emphasis on the Frontend. I'm also open to learning new Frontend frameworks in the future.
+                            I'm comfortable working with any React.js based stack.
+                            I'm also open to learning new Frontend frameworks in the future.
                         </p>
                     </div>
                 </div>
@@ -39,7 +41,7 @@
         </section>
 
         <section>
-            <div id="page-2">
+            <div id="xp-skills">
                 <div class="empty"></div>
                 <div class="modal">
                     <div class="past-exp-container">
@@ -47,13 +49,13 @@
                         <input type="radio" name="past-exp-container" id="SRI-B" checked="checked">
                         <label for="SRI-B">SRI-B</label>
                         <div class="content">
-                            <div class="designation"> <b>Role: </b>PRISM Intern</div>
+                            <div class="designation"> <b>Role: </b>Samsung PRISM Intern</div>
                             <div class="duration"> <b>Duration: </b>September-2021 to April-2022</div>
                             <b>Responsibilities:</b>
                             <ul>
                                 <li>Worked on estimation of Quality Of Experience (QOE) from video streaming traffic</li>
                                 <li>Network trace files that contained video streaming data were captured and analyzed to estimate QOE</li>
-                                <li>On conducting a detailed study on various machine learning algorithms, ultimately the random forest classifier was used to develop a model to quantitatively estimate QOE on a scale of 1-5 (1:poor; 5:excellent)</li>
+                                <li>Conducted a detailed study on various machine learning algorithms, ultimately the random forest classifier was used to develop a model to quantitatively estimate QOE on a scale of 1-5 (1:poor; 5:excellent)</li>
                             </ul>
                         </div>
                         <input type="radio" name="past-exp-container" id="IMOV">
@@ -90,8 +92,8 @@
                             <div class="images">
                                 <img src="./images/python.svg" title="Python3" alt="Python3"/>
                                 <img src="./images/cplusplus.svg" title="C++" alt="C++"/>
-                                <img src="./images/OpenCV_logo_no_text.svg" title="OpenCV" alt="OpenCV"/>
                                 <img src="./images/Git_icon.svg" title="Git" alt="Git"/>
+                                <img src="./images/OpenCV_logo_no_text.svg" title="OpenCV" alt="OpenCV"/>
                                 <img src="./images/P5.js_icon.svg" title="p5.js" alt="p5.js"/>
                                 <img src="./images/Tensorflow_logo.svg" title="TensorFlow2" alt="TensorFlow2"/>
                                 <img src="./images/Python_and_Qt.svg" title="PyQt5" alt="PyQt5"/>
@@ -104,7 +106,7 @@
         </section>
 
         <section>
-            <div id="page-3">
+            <div id="projects">
                 <div class="title"><p>Projects</p></div>
                 <div class="card-list">
                     <!-- <article class="card">
@@ -194,15 +196,23 @@
         </section>
 
         <section>
-            <div id="page-4">
+            <div id="contact-me">
+                <div class="socials">
+                    <a class="linkedin" href="https://www.linkedin.com/in/s-kathiresan/">
+                        <img src="./images/LinkedIn_icon.svg" width="20px" alt="LinkedIn">
+                        <div class="">LinkedIn</div>
+                    </a>
+                    <a class="github" href="https://github.com/theY2Kbug">
+                        <img src="./images/Octicons-mark-github.svg" width="20px" alt="GitHub">
+                        <div class="">GitHub</div>
+                    </a>
+                </div>
                 <div class="contact-card">
                     <div class="title">Contact</div>
                     <div class="about">
-                        <h3>
-                            Feel free to use the form below to reach out to me 
-                            or shoot an email to <i>s_kathiresan@outlook.com</i>
-                            A reply back at the earliest within one working day is guaranteed.
-                        </h3>
+                        Feel free to use the form below to reach out to me 
+                        or shoot an email to <i>s_kathiresan@outlook.com</i>
+                        A reply back at the earliest within a day is guaranteed.
                     </div>
                     <form action="https://formsubmit.co/1ef7ad71c34545c1e732bad3fce1c8f2" method="POST">
                         <div class="inp">
@@ -219,9 +229,9 @@
                         </div>
                         <div class="inp">
                             <label for="message">Message</label>
-                            <textarea name="message" class="field" placeholder="Leave a message..." cols="25" rows="7"></textarea>
+                            <textarea name="message" class="field" placeholder="Leave a message..." cols="20" rows="7"></textarea>
                         </div>
-                        <!-- <input type="hidden" name="_next" value="https://they2kbug.github.io/"> -->
+                        <input type="hidden" name="_next" value="https://they2kbug.github.io/">
                         <button type="submit">Send</button>
                     </form>
                 </div>

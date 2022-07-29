@@ -24,24 +24,26 @@ body .navigation ul {
   width: 100%;
   background-color: transparent;
   display: inline-flex;
-  justify-content: space-around;
 }
 body .navigation ul li {
   color: white;
-  font-size: 1.5em;
   flex-grow: 1;
-  text-align: center;
   list-style: none;
 }
-body .navigation ul a {
-  color: #fff;
+body .navigation ul li a {
+  display: flex;
+  font-size: 1.25em;
+  justify-content: center;
+  color: inherit;
   text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  body .navigation ul li a {
+    font-size: 1em;
+  }
 }
 body .navigation ul li:hover {
   background-color: #000;
-}
-body .navigation ul .one a {
-  color: #d8d8f1;
 }
 body .navigation ul .four a {
   color: #3f88ee;
@@ -72,25 +74,25 @@ body main section:nth-of-type(1) {
   background-color: #171717;
   color: #d8d8f1;
 }
-body main section:nth-of-type(1) #page-1 {
+body main section:nth-of-type(1) #about-me {
   display: flex;
   flex-grow: 1;
 }
-body main section:nth-of-type(1) #page-1 .intro {
+body main section:nth-of-type(1) #about-me .intro {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body main section:nth-of-type(1) #page-1 .intro .common {
+body main section:nth-of-type(1) #about-me .intro .common {
   height: 60%;
 }
-body main section:nth-of-type(1) #page-1 .intro .common .name {
+body main section:nth-of-type(1) #about-me .intro .common .name {
   display: flex;
   height: 75%;
   justify-content: center;
   align-items: flex-end;
 }
-body main section:nth-of-type(1) #page-1 .intro .common .name b {
+body main section:nth-of-type(1) #about-me .intro .common .name b {
   font-size: 6vw;
   -webkit-animation: type 3s steps(12), textCursor 0.75s steps(12) infinite normal;
           animation: type 3s steps(12), textCursor 0.75s steps(12) infinite normal;
@@ -130,13 +132,13 @@ body main section:nth-of-type(1) #page-1 .intro .common .name b {
     border-right-color: transparent;
   }
 }
-body main section:nth-of-type(1) #page-1 .intro .summary {
+body main section:nth-of-type(1) #about-me .intro .summary {
   height: 40%;
   color: #9757ff;
   display: flex;
   align-items: center;
 }
-body main section:nth-of-type(1) #page-1 .intro .summary p {
+body main section:nth-of-type(1) #about-me .intro .summary p {
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 15vh;
@@ -144,30 +146,29 @@ body main section:nth-of-type(1) #page-1 .intro .summary p {
   text-align: justify;
 }
 @media only screen and (max-width: 848px) {
-  body main section:nth-of-type(1) #page-1 .intro .summary p {
+  body main section:nth-of-type(1) #about-me .intro .summary p {
     font-size: 16px !important;
   }
 }
 body main section:nth-of-type(2) {
   background-color: #202020;
 }
-body main section:nth-of-type(2) #page-2 {
+body main section:nth-of-type(2) #xp-skills {
   width: 100%;
   height: 100%;
   overflow-x: auto;
   display: flex;
   flex-direction: column;
 }
-body main section:nth-of-type(2) #page-2 .empty {
+body main section:nth-of-type(2) #xp-skills .empty {
   margin-top: 0px;
   height: 10vh;
 }
-body main section:nth-of-type(2) #page-2 .modal {
+body main section:nth-of-type(2) #xp-skills .modal {
   display: flex;
   margin: 3em;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container {
-  border: 4px solid cornflowerblue;
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container {
   border-right: 2px solid cornflowerblue;
   width: 50%;
   min-width: 360px;
@@ -176,24 +177,24 @@ body main section:nth-of-type(2) #page-2 .modal .past-exp-container {
   flex-wrap: wrap;
   padding: 3em 1em;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container .title {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container .title {
   font-size: 3.5vmax;
   text-align: center;
   color: #d4d4d9;
   margin-bottom: 0.5em;
   width: 100%;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container input {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container input {
   display: none;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container label {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container label {
   color: white;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
   padding: 1em;
   font-weight: bold;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container #blank {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container #blank {
   flex-grow: 1;
   background-color: inherit;
   cursor: default;
@@ -201,10 +202,10 @@ body main section:nth-of-type(2) #page-2 .modal .past-exp-container #blank {
   border: none;
   border-bottom: 4px solid #ff5412;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container label:hover {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container label:hover {
   cursor: pointer;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container .content {
   display: none;
   border: 4px solid #ff5412;
   border-top: none;
@@ -213,133 +214,132 @@ body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content {
   order: 1;
   font-size: 1em;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content ul {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container .content ul {
   position: relative;
   left: 1em;
   margin-right: 0.25em;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content a {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container .content a {
   color: inherit;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container input:not(:checked) + label {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container input:not(:checked) + label {
   border-bottom: 4px solid #ff5412;
   color: #ff5412;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container input:checked + label {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container input:checked + label {
   display: block;
   border: 4px solid #ff5412;
   border-bottom: none;
 }
-body main section:nth-of-type(2) #page-2 .modal .past-exp-container input:checked + label + .content {
+body main section:nth-of-type(2) #xp-skills .modal .past-exp-container input:checked + label + .content {
   display: block;
 }
-body main section:nth-of-type(2) #page-2 .modal .skills {
+body main section:nth-of-type(2) #xp-skills .modal .skills {
   width: 50%;
   min-width: 360px;
   display: flex;
   flex-direction: column;
   padding: 2em;
-  border: 4px solid cornflowerblue;
   border-left: 2px solid cornflowerblue;
 }
-body main section:nth-of-type(2) #page-2 .modal .skills .title {
+body main section:nth-of-type(2) #xp-skills .modal .skills .title {
   font-size: 3.5vmax;
   text-align: center;
   color: #d4d4d9;
   width: 100%;
   margin-bottom: 1em;
 }
-body main section:nth-of-type(2) #page-2 .modal .skills .fe .frontend {
+body main section:nth-of-type(2) #xp-skills .modal .skills .fe .frontend {
   color: #fefefe;
   font-size: xx-large;
   padding-bottom: 0.5em;
 }
-body main section:nth-of-type(2) #page-2 .modal .skills .misc .miscellaneous {
+body main section:nth-of-type(2) #xp-skills .modal .skills .misc .miscellaneous {
   font-size: xx-large;
   padding-bottom: 0.5em;
   color: #fefefe;
 }
-body main section:nth-of-type(2) #page-2 .modal .skills img {
+body main section:nth-of-type(2) #xp-skills .modal .skills img {
   display: block;
   padding: 0.5em;
   width: 75px;
 }
-body main section:nth-of-type(2) #page-2 .modal .skills .images {
+body main section:nth-of-type(2) #xp-skills .modal .skills .images {
   padding: 1em 1em 1em 0;
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 900px) {
-  body main section:nth-of-type(2) #page-2 .modal {
+  body main section:nth-of-type(2) #xp-skills .modal {
     flex-direction: column;
   }
-  body main section:nth-of-type(2) #page-2 .modal .past-exp-container {
+  body main section:nth-of-type(2) #xp-skills .modal .past-exp-container {
     width: 100%;
-    border: 4px solid cornflowerblue;
+    border: none;
     border-bottom: 2px solid cornflowerblue;
   }
-  body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content {
+  body main section:nth-of-type(2) #xp-skills .modal .past-exp-container .content {
     height: 300px;
     font-size: 1em;
     margin-bottom: 2em;
   }
-  body main section:nth-of-type(2) #page-2 .modal .skills {
+  body main section:nth-of-type(2) #xp-skills .modal .skills {
     width: 100%;
-    border: 4px solid cornflowerblue;
+    border: none;
     border-top: 2px solid cornflowerblue;
   }
-  body main section:nth-of-type(2) #page-2 .modal .skills img {
+  body main section:nth-of-type(2) #xp-skills .modal .skills img {
     width: 60px;
   }
 }
 @media screen and (max-width: 600px) {
-  body main section:nth-of-type(2) #page-2 .modal {
+  body main section:nth-of-type(2) #xp-skills .modal {
     margin: 0;
   }
-  body main section:nth-of-type(2) #page-2 .modal .past-exp-container {
+  body main section:nth-of-type(2) #xp-skills .modal .past-exp-container {
     width: 100%;
   }
-  body main section:nth-of-type(2) #page-2 .modal .past-exp-container label {
+  body main section:nth-of-type(2) #xp-skills .modal .past-exp-container label {
     font-size: 16px;
   }
-  body main section:nth-of-type(2) #page-2 .modal .past-exp-container .content {
+  body main section:nth-of-type(2) #xp-skills .modal .past-exp-container .content {
     font-size: 14px;
     height: 400px;
     margin-bottom: 2em;
   }
-  body main section:nth-of-type(2) #page-2 .modal .skills {
+  body main section:nth-of-type(2) #xp-skills .modal .skills {
     width: 100%;
   }
-  body main section:nth-of-type(2) #page-2 .modal .skills .fe .frontend {
+  body main section:nth-of-type(2) #xp-skills .modal .skills .fe .frontend {
     font-size: 24px;
   }
-  body main section:nth-of-type(2) #page-2 .modal .skills .misc .miscellaneous {
+  body main section:nth-of-type(2) #xp-skills .modal .skills .misc .miscellaneous {
     font-size: 24px;
   }
-  body main section:nth-of-type(2) #page-2 .modal .skills img {
+  body main section:nth-of-type(2) #xp-skills .modal .skills img {
     width: 50px;
   }
 }
 body main section:nth-of-type(3) {
-  background-color: #232323;
+  background-color: #171717;
   color: #fefefe;
   min-width: 360px;
 }
-body main section:nth-of-type(3) #page-3 {
+body main section:nth-of-type(3) #projects {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
   overflow-x: auto;
 }
-body main section:nth-of-type(3) #page-3 .title {
+body main section:nth-of-type(3) #projects .title {
   font-size: 3.5vmax;
   text-align: center;
   color: #d4d4d9;
   width: 100%;
   margin-top: 100px;
 }
-body main section:nth-of-type(3) #page-3 .card-list {
+body main section:nth-of-type(3) #projects .card-list {
   display: flex;
   margin-top: 40px;
   flex-grow: 1;
@@ -348,7 +348,7 @@ body main section:nth-of-type(3) #page-3 .card-list {
   align-items: center;
   padding: 3em;
 }
-body main section:nth-of-type(3) #page-3 .card {
+body main section:nth-of-type(3) #projects .card {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -364,28 +364,28 @@ body main section:nth-of-type(3) #page-3 .card {
   border: 4px solid #ffaa34;
   cursor: default;
 }
-body main section:nth-of-type(3) #page-3 .card-header {
+body main section:nth-of-type(3) #projects .card-header {
   height: 75%;
 }
-body main section:nth-of-type(3) #page-3 .card-header > p {
+body main section:nth-of-type(3) #projects .card-header > p {
   margin-bottom: 1em;
   font-size: 1.5em;
   font-weight: 700;
   color: #abc1ec;
 }
-body main section:nth-of-type(3) #page-3 .card-header > p > a {
+body main section:nth-of-type(3) #projects .card-header > p > a {
   color: inherit;
 }
-body main section:nth-of-type(3) #page-3 .card:hover {
+body main section:nth-of-type(3) #projects .card:hover {
   transform: translateY(-1rem);
 }
-body main section:nth-of-type(3) #page-3 .card:hover ~ .card {
+body main section:nth-of-type(3) #projects .card:hover ~ .card {
   transform: translateX(130px);
 }
-body main section:nth-of-type(3) #page-3 .card:not(:first-child) {
+body main section:nth-of-type(3) #projects .card:not(:first-child) {
   margin-left: -130px;
 }
-body main section:nth-of-type(3) #page-3 .card-author {
+body main section:nth-of-type(3) #projects .card-author {
   position: relative;
   right: 1rem;
   bottom: 0rem;
@@ -395,14 +395,14 @@ body main section:nth-of-type(3) #page-3 .card-author {
   /* margin:3rem 0 0; */
   /* margin-right:4em; */
 }
-body main section:nth-of-type(3) #page-3 .card-author .author-name {
+body main section:nth-of-type(3) #projects .card-author .author-name {
   position: relative;
   left: 0.5rem;
   top: 0.2rem;
   color: #8ae08a;
   font-weight: 800;
 }
-body main section:nth-of-type(3) #page-3 .author-avatar img {
+body main section:nth-of-type(3) #projects .author-avatar img {
   display: block;
   width: 60px;
   height: 60px;
@@ -410,74 +410,75 @@ body main section:nth-of-type(3) #page-3 .author-avatar img {
   margin: 16px 10px;
 }
 @media screen and (max-width: 848px) {
-  body main section:nth-of-type(3) #page-3 .title {
+  body main section:nth-of-type(3) #projects .title {
     font-weight: 800;
   }
-  body main section:nth-of-type(3) #page-3 .card {
+  body main section:nth-of-type(3) #projects .card {
     max-height: 360px;
     min-width: 240px;
   }
-  body main section:nth-of-type(3) #page-3 .card-header > p {
+  body main section:nth-of-type(3) #projects .card-header > p {
     margin-bottom: 10px;
     font-size: 1.5em;
   }
-  body main section:nth-of-type(3) #page-3 .card-header > h3 {
+  body main section:nth-of-type(3) #projects .card-header > h3 {
     font-size: 1em;
   }
 }
 @media screen and (max-width: 600px) {
-  body main section:nth-of-type(3) #page-3 .title {
+  body main section:nth-of-type(3) #projects .title {
     font-size: 36px;
     margin-top: 50px;
     margin-bottom: 0;
     min-width: 360px;
     font-weight: 800;
   }
-  body main section:nth-of-type(3) #page-3 .card {
+  body main section:nth-of-type(3) #projects .card {
     box-shadow: none;
     margin: 8px;
     min-width: 300px;
     max-width: 300px;
   }
-  body main section:nth-of-type(3) #page-3 .card-header h3 {
+  body main section:nth-of-type(3) #projects .card-header h3 {
     font-size: 18px;
   }
-  body main section:nth-of-type(3) #page-3 .card:not(:first-child) {
+  body main section:nth-of-type(3) #projects .card:not(:first-child) {
     margin-left: 0px;
   }
-  body main section:nth-of-type(3) #page-3 .card-list {
+  body main section:nth-of-type(3) #projects .card-list {
     margin-top: 0px;
     flex-direction: column-reverse;
     width: auto;
     min-width: 360px;
   }
-  body main section:nth-of-type(3) #page-3 .card:hover {
+  body main section:nth-of-type(3) #projects .card:hover {
     transform: translateY(0);
   }
-  body main section:nth-of-type(3) #page-3 .card:hover ~ .card {
+  body main section:nth-of-type(3) #projects .card:hover ~ .card {
     transform: translateX(0);
   }
 }
 @media screen and (max-width: 360px) {
-  body main section:nth-of-type(3) #page-3 .card {
+  body main section:nth-of-type(3) #projects .card {
     width: 200px;
     height: 300px;
   }
 }
 body main section:nth-of-type(4) {
-  background-color: #262626;
+  background-color: #202020;
 }
-body main section:nth-of-type(4) #page-4 {
+body main section:nth-of-type(4) #contact-me {
   width: 100%;
   height: 100%;
   overflow-x: auto;
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
   cursor: default;
 }
-body main section:nth-of-type(4) #page-4 .contact-card {
+body main section:nth-of-type(4) #contact-me .contact-card {
   display: flex;
   border: 2px solid #505251;
   color: #3f88ee;
@@ -488,50 +489,95 @@ body main section:nth-of-type(4) #page-4 .contact-card {
   min-width: 275px;
   padding: 10px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card .title {
+body main section:nth-of-type(4) #contact-me .contact-card .title {
   font-size: 3.5vmax;
   text-align: center;
 }
-body main section:nth-of-type(4) #page-4 .contact-card .about {
+body main section:nth-of-type(4) #contact-me .contact-card .about {
   text-align: justify;
   margin-top: 0.5vw;
-  font-size: 16px;
+  font-size: 1.35em;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form {
+body main section:nth-of-type(4) #contact-me .contact-card form {
   padding: 12px 0px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form button {
+body main section:nth-of-type(4) #contact-me .contact-card form button {
   border: none;
   border-radius: 0.3rem;
   padding: 4px;
-  font-size: 16px;
+  font-size: 1.25em;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp {
+body main section:nth-of-type(4) #contact-me .contact-card form > .inp {
   display: flex;
   flex-direction: column;
   margin: 8px 0;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp .field {
+body main section:nth-of-type(4) #contact-me .contact-card form > .inp .field {
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
   border: 0px solid;
   margin-bottom: 0.25vw;
   font-size: 20px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp label {
+body main section:nth-of-type(4) #contact-me .contact-card form > .inp label {
   font-size: 18px;
 }
-body main section:nth-of-type(4) #page-4 .contact-card form > .inp textarea {
+body main section:nth-of-type(4) #contact-me .contact-card form > .inp textarea {
   resize: none;
+}
+body main section:nth-of-type(4) #contact-me .socials {
+  display: flex;
+}
+body main section:nth-of-type(4) #contact-me .socials img {
+  display: block;
+}
+body main section:nth-of-type(4) #contact-me .socials a {
+  text-decoration: none;
+  color: #fefefe;
+}
+body main section:nth-of-type(4) #contact-me .socials a:hover {
+  color: #3f88ee;
+  background-color: #000;
+}
+body main section:nth-of-type(4) #contact-me .socials .linkedin {
+  margin: 0 4px;
+  display: flex;
+  padding: 4px;
+  border: 2px solid #505251;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+body main section:nth-of-type(4) #contact-me .socials .linkedin div {
+  padding: 0 0 0 8px;
+}
+body main section:nth-of-type(4) #contact-me .socials .github {
+  display: flex;
+  padding: 4px;
+  margin: 0 4px;
+  border: 2px solid #505251;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+body main section:nth-of-type(4) #contact-me .socials .github img {
+  padding: 1px;
+  background-color: #fefefe;
+  border-radius: 10px;
+}
+body main section:nth-of-type(4) #contact-me .socials .github div {
+  padding: 0 0 0 8px;
+}
+body main section:nth-of-type(4) #contact-me button:hover {
+  background-color: #000;
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   body main section:nth-of-type(1) {
     scroll-snap-align: none;
   }
-  body main section:nth-of-type(1) #page-1 .intro .common .name b {
+  body main section:nth-of-type(1) #about-me .intro .common .name b {
     font-size: 42px;
   }
-  body main section:nth-of-type(1) #page-1 .intro .summary p {
+  body main section:nth-of-type(1) #about-me .intro .summary p {
     font-size: 14px !important;
   }
   body main section:nth-of-type(2) {
@@ -543,10 +589,10 @@ body main section:nth-of-type(4) #page-4 .contact-card form > .inp textarea {
   body main section:nth-of-type(4) {
     scroll-snap-align: none;
   }
-  body main section:nth-of-type(4) #page-4 .title {
+  body main section:nth-of-type(4) #contact-me .title {
     font-weight: 800;
   }
-  body main section:nth-of-type(4) #page-4 .contact-card .about {
-    font-size: 12px;
+  body main section:nth-of-type(4) #contact-me .contact-card .about {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=style.css.map */
