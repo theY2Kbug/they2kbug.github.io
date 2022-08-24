@@ -262,7 +262,6 @@ body main section:nth-of-type(2) #xp-skills .modal .skills .misc .miscellaneous 
 body main section:nth-of-type(2) #xp-skills .modal .skills img {
   display: block;
   padding: 0.5em;
-  width: 75px;
 }
 body main section:nth-of-type(2) #xp-skills .modal .skills .images {
   padding: 1em 1em 1em 0;
